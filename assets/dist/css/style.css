@@ -1,0 +1,848 @@
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+input,
+a,
+section {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+  border: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.jp_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 51px;
+  position: relative;
+}
+
+.jp_header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+
+.jp_header .jp_header-box {
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px;
+}
+
+.jp_header .jp_header-box form {
+  width: 90%;
+  height: 40px;
+  float: left;
+  position: relative;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.jp_header .jp_header-box form input {
+  width: 80%;
+  height: 27px;
+  float: right;
+  margin: 6px 0;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.jp_header .jp_header-box form .jq_header-icon1 {
+  width: 25px;
+  height: 25px;
+  background-image: url(../../images/sc1.png);
+  background-position: 0 0;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+.jp_header .jp_header-box form .jq_header-icon2 {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/bc3.png);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+
+.jp_header .jp_header-box .jp_nva {
+  width: 10%;
+  height: 40px;
+  display: block;
+  float: left;
+  background-image: url(../../images/bc2.png);
+  background-position: 0 0;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+}
+
+.jp_banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.jp_banner .jp_wrapper {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.jp_banner .jp_wrapper .list {
+  width: 1000%;
+}
+
+.jp_banner .jp_wrapper .list li {
+  width: 10%;
+  float: left;
+}
+
+.jp_banner .jp_wrapper .list li a {
+  width: 100%;
+}
+
+.jp_banner .jp_wrapper .list li a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_banner .active {
+  background-color: #fff;
+}
+
+.jp_banner .jp_propagation {
+  position: absolute;
+  left: 145px;
+  bottom: 5px;
+}
+
+.jp_banner .jp_propagation ol {
+  width: 85px;
+  height: 12px;
+}
+
+.jp_banner .jp_propagation ol li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5px;
+}
+
+.jp_nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jp_nav ul {
+  width: 100%;
+  height: 100%;
+}
+
+.jp_nav ul li {
+  width: 25%;
+  float: left;
+}
+
+.jp_nav ul li a {
+  width: 100%;
+}
+
+.jp_nav ul li a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_acti {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jp_acti .box {
+  width: 100%;
+}
+
+.jp_acti .box .jp_acti-content {
+  width: 100%;
+}
+
+.jp_acti .box .jp_acti-content .fl {
+  width: 50%;
+}
+
+.jp_acti .box .jp_acti-content .fl a {
+  width: 100%;
+}
+
+.jp_acti .box .jp_acti-content .fl a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_acti .box .jp_acti-content .fr {
+  width: 50%;
+}
+
+.jp_acti .box .jp_acti-content .fr a {
+  width: 100%;
+}
+
+.jp_acti .box .jp_acti-content .fr a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_acti-bot {
+  width: 100%;
+  height: 100%;
+}
+
+.jp_acti-bot a {
+  width: 100%;
+  height: 100%;
+}
+
+.jp_acti-bot a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_acti-bot2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.jp_acti-bot2 a {
+  width: 100%;
+  height: 100%;
+}
+
+.jp_acti-bot2 a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_commodity {
+  width: 100%;
+}
+
+.jp_commodity .jp_commodit-box {
+  width: 100%;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-top {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  line-height: 40px;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-top span {
+  padding: 0 10px;
+  float: left;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-top .activetext {
+  color: red;
+  display: inline-block;
+  border-bottom: 2px solid red;
+  height: 38px !important;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li {
+  width: 49%;
+  float: left;
+  margin-left: 1%;
+  background-color: #fff;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li a .t1 {
+  float: left;
+  padding-left: 5px;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li a .t1 .text {
+  color: red;
+  font-size: 15px;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li a .t1 .text2 {
+  color: #bbbbbb;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.jp_commodity .jp_commodit-box .jp_commodit-shop .list li a .t2 {
+  width: 100%;
+  font-size: 12px;
+  display: block;
+  float: left;
+  padding-left: 5px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.jp_footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.jp_footer .jp_footer-box {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+.jp_footer .jp_footer-box ul {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+
+.jp_footer .jp_footer-box ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.jp_footer .jp_footer-box ul li a {
+  width: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+.jp_footer .jp_footer-box ul li a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_footer .jp_footer-box ul li span {
+  font-size: 12px;
+}
+
+.jp_footer .jp_footer-box ul li .sy {
+  color: #ff464e;
+}
+
+.jp_fl-header {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-color: #fff;
+}
+
+.jp_fl-header .jp_fl-header-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jp_fl-header .jp_fl-header-box form {
+  position: relative;
+  width: 90%;
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: block;
+  margin: 8px auto;
+}
+
+.jp_fl-header .jp_fl-header-box form input {
+  width: 90%;
+  height: 30px;
+  float: right;
+  background-color: transparent;
+}
+
+.jp_fl-header .jp_fl-header-box form span {
+  width: 25px;
+  height: 25px;
+  background-image: url(../../images/sc1.png);
+  background-position: 0 0;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+
+.jp_fl-acti {
+  width: 100%;
+}
+
+.jp_fl-acti .jp_fl-acti-box {
+  width: 100%;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_left-box {
+  width: 20%;
+  float: left;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_left-box ul {
+  width: 100%;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_left-box ul li {
+  width: cail(100% - 12px);
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.jp_fl-acti .jp_fl-acti-box .activefl {
+  background-color: #fff;
+  color: #ff464e;
+  border-left: 2px solid #ff464e;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box {
+  width: 80%;
+  height: 800px;
+  float: left;
+  background-color: #fff;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box .box {
+  width: 100%;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box .box ul {
+  width: 100%;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box .box ul li {
+  width: 33.333%;
+  float: left;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box .box ul li a {
+  display: block;
+  width: 80%;
+  padding: 0 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box .box ul li a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_fl-acti .jp_fl-acti-box .jp_right-box .box ul li a span {
+  font-size: 14px;
+}
+
+.jp_sp-header {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+.jp_sp-header .box {
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+
+.jp_sp-header .box .text {
+  color: #4a4a4a;
+  font-size: 18px;
+}
+
+.jp_sp-header .box .text1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: block;
+  right: 0;
+  top: -5px;
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+.jp_sp-shop {
+  width: 100%;
+}
+
+.jp_sp-shop .jp_sp-shop-box {
+  height: 100%;
+  padding: 0 20%;
+}
+
+.jp_sp-shop .jp_sp-shop-box img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.jp_sp-shop .jp_sp-shop-box div {
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.jp_sp-shop .jp_sp-shop-box a {
+  width: 130px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px auto;
+  color: #ff464e;
+  border: 1px solid #ff464e;
+}
+
+.jp_gr-header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.jp_gr-header .jp_gr-box {
+  width: 100%;
+  height: 100%;
+  background-color: #ff464e;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-nav {
+  width: 100%;
+  height: 40px;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-nav .icon-fh {
+  width: 25px;
+  height: 25px;
+  background-image: url(../../images/fh2.png);
+  background-position: 0 0;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  padding: 0 10px;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-nav .gr-text {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-nav .gr-out {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot {
+  width: 100%;
+  height: 110px;
+  margin: 10px 10px 0 10px;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fl {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fl span {
+  width: 80px;
+  width: 80px;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fl span img {
+  width: 100%;
+  display: block;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fr {
+  width: 70%;
+  height: 80px;
+  float: left;
+  padding: 15px 10px 0 20px;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fr .name {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fr .account {
+  width: 75px;
+  height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 5px;
+  position: relative;
+}
+
+.jp_gr-header .jp_gr-box .jp_gr-bot .jp_bot-fr .account .icon-acc {
+  width: 12px;
+  height: 12px;
+  background-image: url(../../images/tz.png);
+  background-position: 0 0;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.jp_gr-order {
+  width: 100%;
+}
+
+.jp_gr-order .jp_gr-order-box {
+  width: 100%;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-top {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-top .ts1 {
+  width: 80px;
+  height: 50px;
+  float: left;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-top .ts2 {
+  width: 80px;
+  height: 50px;
+  float: right;
+  font-size: 15px;
+  color: #999999;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot .jp_gr-order-wrapper {
+  width: 100%;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot .jp_gr-order-wrapper ul {
+  width: 100%;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot .jp_gr-order-wrapper ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot .jp_gr-order-wrapper ul li a {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot .jp_gr-order-wrapper ul li a img {
+  width: 100%;
+  display: block;
+}
+
+.jp_gr-order .jp_gr-order-box .jp_gr-order-bot .jp_gr-order-wrapper ul li span {
+  font-size: 14px;
+}
+
+.jq_gr-coupon {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.jq_gr-coupon .jq_coupon {
+  width: 100%;
+}
+
+.jq_gr-coupon .jq_coupon .jp_gr-coupon-top {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.jq_gr-coupon .jq_coupon .jp_gr-coupon-top .ts1 {
+  width: 80px;
+  height: 50px;
+  float: left;
+}
+
+.jq_gr-coupon .jq_coupon .jp_gr-coupon-top .ts2 {
+  width: 200px;
+  height: 50px;
+  float: right;
+  font-size: 15px;
+  text-align: right;
+  color: #999999;
+}
+
+.jp_gr-service {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.jp_gr-service .jp_gr-box {
+  width: 100%;
+}
+
+.jp_gr-service .jp_gr-box .jp_gr-service-bt {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.jp_gr-service .jp_gr-box .jp_gr-service-bt .ts1 {
+  width: 80px;
+  height: 50px;
+  float: left;
+}
+
+.jp_gr-return {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 0 0;
+  background-color: #fff;
+}
+
+.jp_gr-return .box {
+  width: 100%;
+  height: 40px;
+}
+
+.jp_gr-return .box span {
+  display: block;
+  float: left;
+  width: 33.3333%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+a {
+  color: #333 !important;
+}

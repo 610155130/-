@@ -1,0 +1,751 @@
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+input,
+a,
+section {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+input,
+button {
+  outline: none;
+  border: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+$a: 100%;
+$b: 12px;
+body {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.jp_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 51px;
+  position: relative;
+}
+// 搜索框
+.jp_header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  .jp_header-box {
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+    form {
+      width: 90%;
+      height: 40px;
+      float: left;
+      position: relative;
+      border-radius: 15px;
+      background-color: rgb(242, 242, 242);
+      input {
+        width: 80%;
+        height: 27px;
+        float: right;
+        margin: 6px 0;
+        border-radius: 15px;
+        background-color: rgb(242, 242, 242);
+      }
+      .jq_header-icon1 {
+        width: 25px;
+        height: 25px;
+        background-image: url(../../images/sc1.png);
+        background-position: 0 0;
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+      }
+      .jq_header-icon2 {
+        width: 20px;
+        height: 20px;
+        background-image: url(../../images/bc3.png);
+        background-position: 0 0;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 35px;
+      }
+    }
+    .jp_nva {
+      width: 10%;
+      height: 40px;
+      display: block;
+      float: left;
+      background-image: url(../../images/bc2.png);
+      background-position: 0 0;
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+// 轮播框
+.jp_banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .jp_wrapper {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    .list {
+      width: 1000%;
+      li {
+        width: 10%;
+        float: left;
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .active {
+    background-color: #fff;
+  }
+  .jp_propagation {
+    position: absolute;
+    left: 145px;
+    bottom: 5px;
+    ol {
+      width: 85px;
+      height: 12px;
+      li {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #333;
+        border-radius: 50%;
+        float: left;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+// 导航栏
+.jp_nav {
+  width: 100%;
+  overflow: hidden;
+  ul {
+    width: 100%;
+    height: 100%;
+    li {
+      width: 25%;
+      float: left;
+      a {
+        width: 100%;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+// 活动栏
+.jp_acti {
+  width: 100%;
+  overflow: hidden;
+  .box {
+    width: 100%;
+    .jp_acti-content {
+      width: 100%;
+      .fl {
+        width: 50%;
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      .fr {
+        width: 50%;
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.jp_acti-bot {
+  width: 100%;
+  height: 100%;
+  a {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+.jp_acti-bot2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  a {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+// 商品栏
+.jp_commodity {
+  width: 100%;
+  .jp_commodit-box {
+    width: 100%;
+    .jp_commodit-top {
+      width: 100%;
+      height: 40px;
+      background-color: #fff;
+      line-height: 40px;
+      span {
+        padding: 0 10px;
+        float: left;
+      }
+      .activetext {
+        color: red;
+        display: inline-block;
+        border-bottom: 2px solid red;
+        height: 38px !important;
+      }
+    }
+    .jp_commodit-shop {
+      width: 100%;
+      overflow: hidden;
+      .list {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        li {
+          width: 49%;
+          float: left;
+          margin-left: 1%;
+          background-color: #fff;
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            img {
+              width: 100%;
+              display: block;
+            }
+            .t1 {
+              float: left;
+              padding-left: 5px;
+              .text {
+                color: red;
+                font-size: 15px;
+              }
+              .text2 {
+                color: #bbbbbb;
+                font-size: 12px;
+                text-decoration: line-through;
+              }
+            }
+            .t2 {
+              width: 100%;
+              font-size: 12px;
+              display: block;
+              float: left;
+              padding-left: 5px;
+              text-align: left;
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 底部栏
+.jp_footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  .jp_footer-box {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    ul {
+      width: 100%;
+      height: 50px;
+      padding: 5px;
+      li {
+        width: 25%;
+        float: left;
+        text-align: center;
+        a {
+          width: 25px;
+          display: block;
+          margin: 0 auto;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+        span {
+          font-size: 12px;
+        }
+        .sy {
+          color: #ff464e;
+        }
+      }
+    }
+  }
+}
+
+//--------------分类栏-----------------------
+
+// 分类搜索框
+
+.jp_fl-header {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-color: #fff;
+  .jp_fl-header-box {
+    width: 100%;
+    overflow: hidden;
+    form {
+      position: relative;
+      width: 90%;
+      height: 30px;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      display: block;
+      margin: 8px auto;
+      input {
+        width: 90%;
+        height: 30px;
+        float: right;
+        background-color: transparent;
+      }
+      span {
+        width: 25px;
+        height: 25px;
+        background-image: url(../../images/sc1.png);
+        background-position: 0 0;
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+      }
+    }
+  }
+}
+
+// 分类搜索框
+.jp_fl-acti {
+  width: 100%;
+  .jp_fl-acti-box {
+    width: 100%;
+    .jp_left-box {
+      width: 20%;
+      float: left;
+      ul {
+        width: 100%;
+        li {
+          width: cail(#{$a} - #{$b});
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          padding-left: 10px;
+        }
+      }
+    }
+    .activefl {
+      background-color: #fff;
+      color: #ff464e;
+      border-left: 2px solid #ff464e;
+    }
+    .jp_right-box {
+      width: 80%;
+      height: 800px;
+      float: left;
+      background-color: #fff;
+      .box {
+        width: 100%;
+        ul {
+          width: 100%;
+          li {
+            width: 33.333%;
+            float: left;
+            a {
+              display: block;
+              width: 80%;
+              padding: 0 10%;
+              margin: 0 auto;
+              text-align: center;
+              img {
+                width: 100%;
+                display: block;
+              }
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//---------------购物车栏--------------------
+
+// 购物头部栏
+.jp_sp-header {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  .box {
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    .text {
+      color: #4a4a4a;
+      font-size: 18px;
+    }
+    .text1 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      display: block;
+      right: 0;
+      top: -5px;
+      font-size: 15px;
+      color: #4a4a4a;
+    }
+  }
+}
+
+// 购物车商品栏
+.jp_sp-shop {
+  width: 100%;
+  .jp_sp-shop-box {
+    height: 100%;
+    padding: 0 20%;
+    img {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    div {
+      color: #4a4a4a;
+      text-align: center;
+    }
+    a {
+      width: 130px;
+      height: 40px;
+      display: block;
+      line-height: 40px;
+      text-align: center;
+      margin: 10px auto;
+      color: #ff464e;
+      border: 1px solid #ff464e;
+    }
+  }
+}
+
+//---------------个人中心栏-------------------
+
+//个人中心头部
+.jp_gr-header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  .jp_gr-box {
+    width: 100%;
+    height: 100%;
+    background-color: #ff464e;
+    .jp_gr-nav {
+      width: 100%;
+      height: 40px;
+      .icon-fh {
+        width: 25px;
+        height: 25px;
+        background-image: url(../../images/fh2.png);
+        background-position: 0 0;
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        padding: 0 10px;
+      }
+      .gr-text {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+      }
+      .gr-out {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        color: #fff;
+        font-size: 15px;
+        padding: 0 10px;
+      }
+    }
+    .jp_gr-bot {
+      width: 100%;
+      height: 110px;
+      margin: 10px 10px 0 10px;
+      .jp_bot-fl {
+        width: 80px;
+        height: 80px;
+        float: left;
+        border-radius: 50%;
+        overflow: hidden;
+        span {
+          width: 80px;
+          width: 80px;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      .jp_bot-fr {
+        width: 70%;
+        height: 80px;
+        float: left;
+        padding: 15px 10px 0 20px;
+        .name {
+          width: 200px;
+          height: 20px;
+          margin-bottom: 10px;
+          display: block;
+          color: #fff;
+        }
+        .account {
+          width: 75px;
+          height: 18px;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          line-height: 18px;
+          font-size: 12px;
+          color: #fff;
+          padding: 0 5px;
+          position: relative;
+          .icon-acc {
+            width: 12px;
+            height: 12px;
+            background-image: url(../../images/tz.png);
+            background-position: 0 0;
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//个人订单
+.jp_gr-order {
+  width: 100%;
+  .jp_gr-order-box {
+    width: 100%;
+
+    .jp_gr-order-top {
+      width: 100%;
+      height: 50px;
+      background-color: #fff;
+      line-height: 50px;
+      padding: 0 20px;
+      border-bottom: 1px solid rgba(245, 245, 245, 1);
+      .ts1 {
+        width: 80px;
+        height: 50px;
+        float: left;
+      }
+      .ts2 {
+        width: 80px;
+        height: 50px;
+        float: right;
+        font-size: 15px;
+        color: #999999;
+      }
+    }
+    .jp_gr-order-bot {
+      width: 100%;
+      height: 90px;
+      background-color: #fff;
+      .jp_gr-order-wrapper {
+        width: 100%;
+        ul {
+          width: 100%;
+          padding: 15px 0;
+          overflow: hidden;
+          li {
+            width: 25%;
+            float: left;
+            text-align: center;
+            a {
+              width: 40%;
+              display: block;
+              margin: 0 auto;
+              img {
+                width: 100%;
+                display: block;
+              }
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//个人优惠卷
+.jq_gr-coupon {
+  width: 100%;
+  margin: 10px 0 0 0;
+  .jq_coupon {
+    width: 100%;
+    .jp_gr-coupon-top {
+      width: 100%;
+      height: 50px;
+      background-color: #fff;
+      line-height: 50px;
+      padding: 0 20px;
+      border-bottom: 1px solid rgba(245, 245, 245, 1);
+      .ts1 {
+        width: 80px;
+        height: 50px;
+        float: left;
+      }
+      .ts2 {
+        width: 200px;
+        height: 50px;
+        float: right;
+        font-size: 15px;
+        text-align: right;
+        color: #999999;
+      }
+    }
+  }
+}
+// 个人客服
+.jp_gr-service {
+  width: 100%;
+  margin: 10px 0 0 0;
+  .jp_gr-box {
+    width: 100%;
+    .jp_gr-service-bt {
+      width: 100%;
+      height: 50px;
+      background-color: #fff;
+      line-height: 50px;
+      padding: 0 20px;
+      border-bottom: 1px solid rgba(245, 245, 245, 1);
+      .ts1 {
+        width: 80px;
+        height: 50px;
+        float: left;
+      }
+    }
+  }
+}
+// 个人返回
+
+.jp_gr-return {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 0 0;
+  background-color: #fff;
+  .box {
+    width: 100%;
+    height: 40px;
+    span {
+      display: block;
+      float: left;
+      width: 33.3333%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #4a4a4a;
+      font-size: 14px;
+    }
+  }
+}
+a{
+  color: #333 !important;
+ }
